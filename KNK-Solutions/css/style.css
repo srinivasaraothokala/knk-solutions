@@ -9276,6 +9276,10 @@ h2.footer-menu-name:after {
 	background-size: 100%;
 }
 
+.carousel-testimonial .owl-stage {
+	transition-timing-function: linear !important;
+}
+
 .carousel-testimonial .item {
 	padding: 30px 10px;
 }
@@ -9657,7 +9661,7 @@ a.footer-copyright-link:hover {
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 1230px;
-		padding: 40px 15px 350px;
+		padding: 40px 15px 50px;
 		position: relative;
 	}
 }
@@ -9670,7 +9674,7 @@ a.footer-copyright-link:hover {
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 1230px;
-		padding: 40px 15px 350px;
+		padding: 40px 15px 50px;
 		position: relative;
 	}
 .QuickLinks {
@@ -9976,4 +9980,44 @@ a.footer-copyright-link:hover {
     background:transparent!important
 }
 
+}
+
+#looplogoslide {
+  display:none;
+  overflow: hidden;
+}
+
+.nbs-flexisel-container {
+  position:relative;
+  max-width:100%;
+  display: block;
+  overflow: hidden;
+}
+.nbs-flexisel-ul {
+  position:relative;
+  width:99999px;
+  margin:0px;
+  padding:0px;
+  list-style-type:none;   
+  text-align:center;  
+}
+
+.nbs-flexisel-inner {
+  overflow:hidden;
+  float:left;
+  width:100%;
+}
+
+.nbs-flexisel-item {
+  float:left;
+  margin:0px;
+  padding:0px;
+  position:relative;
+  line-height:0px;
+}
+.nbs-flexisel-item img {
+  width: 100%;
+  position: relative;
+  margin: 25px 0 25px 0;
+  max-width: 150px;
 }

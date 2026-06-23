@@ -479,31 +479,30 @@
 
 })(window.jQuery);
 
-$('.carousel-testimonial').owlCarousel({
-		    loop:true,
-		    margin:0,
-			  dots: true, 
-		    responsiveClass:true,
-			 autoplay: true,   // Enable auto-play
-  autoplayTimeout: 3000, // Delay between slides (in ms) — here it's 3 seconds
-  autoplayHoverPause: true ,// Pause on mouse hover
-		    responsive:{
-		        0:{
-		            items:1,
-		            nav:true
-		        },
-		        600:{
-		            items:3,
-		            nav:false
-		        },
-		        1000:{
-		            items:3,
-		            nav:true,
-					  dots: true, 
-		            loop:false
-		        }
-		    }
-		})
+$(window).on('load', function() {
+    $("#looplogoslide").flexisel({
+        visibleItems: 5,
+        animationSpeed: 5000,
+        autoPlay: true,
+        autoPlaySpeed: 0,
+        pauseOnHover: false,
+        enableResponsiveBreakpoints: true,
+        responsiveBreakpoints: { 
+            portrait: { 
+                changePoint:480,
+                visibleItems: 2
+            }, 
+            landscape: { 
+                changePoint:640,
+                visibleItems: 3
+            },
+            tablet: { 
+                changePoint:1000,
+                visibleItems: 4
+            }
+        }
+    });
+});
 
 		
 
